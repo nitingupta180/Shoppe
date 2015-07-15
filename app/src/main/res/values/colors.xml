@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background">#FFEEEEEE</color>
+    <color name="drawer_background">#FFF8F8F8</color>
+    <color name="drawer_background_touched">#FFE0E0E0</color>
+    <color name="actionbar_title_color">#4D4D4D</color>
+    <color name="actionbar_subtitle_color">#808080</color>
+    <color name="fragment_background">#FFEEEEEE</color>
+    <color name="primary_text_color">#FF333333</color>
+    <color name="opaque_black">#B3000000</color>
+    <color name="answer_card">#FFE5E5E5</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="section_header">#FF7F1101</color>
+
+    <color name="border_card">#FFE0E0E0</color>
+</resources>
