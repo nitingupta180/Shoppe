@@ -3,13 +3,13 @@ package com.example.shoppe.datamodel;
 /**
  * Created by nitingup on 7/15/15.
  */
-public class Items {
+public class Item {
 
     private String mLabel;
     private String mImage;
     private String mWebUrl;
 
-    public Items(String label, String image, String webUrl) {
+    public Item(String label, String image, String webUrl) {
         mLabel = label;
         mImage = image;
         mWebUrl = webUrl;

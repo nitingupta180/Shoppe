@@ -10,9 +10,9 @@ public class ProductTemplate {
     private String mLabel;
     private String mImage;
     private String mTemplate;
-    private ArrayList<Items> mItemList;
+    private ArrayList<Item> mItemList;
 
-    public ProductTemplate(String label, String image, String template, ArrayList<Items> itemList) {
+    public ProductTemplate(String label, String image, String template, ArrayList<Item> itemList) {
         mLabel = label;
         mImage = image;
         mTemplate = template;
@@ -43,11 +43,11 @@ public class ProductTemplate {
         mTemplate = template;
     }
 
-    public ArrayList<Items> getItemList() {
+    public ArrayList<Item> getItemList() {
         return mItemList;
     }
 
-    public void setItemList(ArrayList<Items>itemList) {
+    public void setItemList(ArrayList<Item>itemList) {
         mItemList = itemList;
     }
 }

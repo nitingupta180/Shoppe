@@ -13,8 +13,8 @@ public class Constants {
     public static final String TYPEFACE_SANS_SERIF_LIGHT = "sans-serif-light";
 
     //Constants for First Json File
-    public static final String FILE_TITLE_1 = "f_one";
-    public static final String FILE_TITLE_2 = "f_two";
+    public static final String FILE_TITLE_1 = "f_one.json";
+    public static final String FILE_TITLE_2 = "f_two.json";
 
     //Constants for JSON  Parsing
     public static final String JSON_LABEL = "label";
