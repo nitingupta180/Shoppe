@@ -7,4 +7,6 @@
     <dimen name="secondary_text_size">10sp</dimen>
 
     <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="offset">5dp</dimen>
+    <dimen name="height">120dp</dimen>
 </resources>

@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.example.shoppe.R;
 import com.example.shoppe.dataadapter.ContentAdapter;
@@ -65,14 +64,14 @@ public class MyContentFragment extends Fragment {
 
         mRootView.setLayoutManager(mLayoutManager);
 
-        mRootView.setHasFixedSize(true);
+        mRootView.setHasFixedSize(false);
 
         mAdapter = new ContentAdapter(mContext, mProducts);
 
-        mRootView.setAdapter(mAdapter);
+        //mRootView.setAdapter(mAdapter);
 
         new JSONLoader().execute();
-        
+
         return v;
     }
 
@@ -88,6 +87,7 @@ public class MyContentFragment extends Fragment {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
             if(mAdapter != null) {
+                mRootView.setAdapter(mAdapter);
                 mAdapter.notifyDataSetChanged();
             }
         }
@@ -107,7 +107,7 @@ public class MyContentFragment extends Fragment {
                         String name = reader.nextName();
                         if(name.equals(Constants.JSON_LABEL)) {
                             label = reader.nextString();
-                        } else if(name.equals(Constants.JSON_IMAGE)) {
+                        } else if(name.equals(Constants.JSON_IMAGE) || name.equals(Constants.JSON_IMAGE_URL)) {
                             image = reader.nextString();
                         } else if(name.equals(Constants.JSON_TEMPLATE)) {
                             template = reader.nextString();
@@ -120,7 +120,7 @@ public class MyContentFragment extends Fragment {
                                     String itemName = reader.nextName();
                                     if(itemName.equals(Constants.JSON_LABEL)) {
                                         itemLabel = reader.nextString();
-                                    } else if (itemName.equals(Constants.JSON_IMAGE)) {
+                                    } else if (itemName.equals(Constants.JSON_IMAGE) || itemName.equals(Constants.JSON_IMAGE_URL)) {
                                         itemImage = reader.nextString();
                                     } else if (itemName.equals(Constants.JSON_WEB_URL)) {
                                         itemWebUrl = reader.nextString();

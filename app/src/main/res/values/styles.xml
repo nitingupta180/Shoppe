@@ -6,13 +6,13 @@
     </style>
 
     <style name="ActionBarTitleStyle">
-        <item name="android:textColor">@color/actionbar_title_color</item>
+        <item name="android:textColor">@color/color_white</item>
         <item name="android:textSize">18sp</item>
     </style>
 
     <style name="ActionBarSubtitleStyle">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/actionbar_subtitle_color</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
     <style name="TextDrawerNormal">
@@ -28,5 +28,10 @@
     <style name="CardTextSecondary">
         <item name="android:textSize">@dimen/secondary_text_size</item>
         <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+
+    <style name="RowTitle">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/light_grey</item>
     </style>
 </resources>

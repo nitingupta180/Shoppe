@@ -15,7 +15,7 @@ public class Utils {
 
     public static void configureActionBarStyle(Activity context) {
         ActionBar bar = context.getActionBar();
-        bar.setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+        bar.setBackgroundDrawable(new ColorDrawable(Color.BLUE));
         int titleId = context.getResources().getIdentifier("action_bar_title",
                 "id", "android");
         TextView actionBarTitle = (TextView) context.findViewById(titleId);

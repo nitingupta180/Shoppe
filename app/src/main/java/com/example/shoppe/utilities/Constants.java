@@ -19,6 +19,7 @@ public class Constants {
     //Constants for JSON  Parsing
     public static final String JSON_LABEL = "label";
     public static final String JSON_IMAGE = "image";
+    public static final String JSON_IMAGE_URL = "image_url";
     public static final String JSON_TEMPLATE = "template";
     public static final String JSON_ITEMS = "items";
     public static final String JSON_WEB_URL = "web-url";
