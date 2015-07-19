@@ -48,8 +48,6 @@ public class RowDataAdapter extends RecyclerView.Adapter<RowDataAdapter.ViewHold
             convertView = inflater.inflate(R.layout.product_template_one, viewGroup, false);
         } else if (mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_2)) {
             convertView = inflater.inflate(R.layout.product_template_two, viewGroup, false);
-        } else if (mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_3)) {
-            convertView = inflater.inflate(R.layout.product_template_three, viewGroup, false);
         }
         return new ViewHolder(convertView);
     }
@@ -60,15 +58,12 @@ public class RowDataAdapter extends RecyclerView.Adapter<RowDataAdapter.ViewHold
 
         Point display = new Point();
         ((WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(display);
-        int offset = mContext.getResources().getDimensionPixelSize(R.dimen.offset);
 
-        if(mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_1) || mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_3)) {
-            int width = display.x - offset;
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT);
+        if(mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_1)) {
+            int width = display.x;
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width, ViewGroup.LayoutParams.WRAP_CONTENT);
             viewHolder.mImageView.setLayoutParams(params);
             viewHolder.mImageView.requestLayout();
-        } else if (mTemplateType.equals(Constants.JSON_PRODUCT_TEMPLATE_2)) {
-
         }
 
         if (mImageLoader != null) {

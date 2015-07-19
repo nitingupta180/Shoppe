@@ -24,7 +24,7 @@ public class DynamicImageView extends ImageView {
             int offset = getResources().getDimensionPixelSize(R.dimen.offset);
 
             int height = MeasureSpec.getSize(heightMeasureSpec);
-            int width = MeasureSpec.getSize(widthMeasureSpec) - offset;
+            int width = MeasureSpec.getSize(widthMeasureSpec)  - (offset * 2);
 
             if (width >= height)
                 height = (int) Math.ceil(width * (float) d.getIntrinsicHeight() / d.getIntrinsicWidth());
